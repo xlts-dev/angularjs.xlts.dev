@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "xlts-dev": {
+      "hosting": {
+        "xlts": [
+          "xlts-dev"
+        ]
+      }
+    }
+  }
+}

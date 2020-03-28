@@ -121,8 +121,16 @@
               "devServerTarget": "xlts:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "xlts"
+    }
+  },
+  "defaultProject": "xlts",
+  "cli": {
+    "analytics": "70dd6e29-cdde-4246-8158-9dcf22951d2f"
+  }
 }
