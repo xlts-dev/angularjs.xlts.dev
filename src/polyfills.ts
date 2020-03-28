@@ -53,14 +53,14 @@
  */
 
 /***************************************************************************************************
- * SCULLY IMPORTS
- */
-// tslint:disable-next-line: align
-import 'zone.js/dist/task-tracking';
-/***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone'; // Included with Angular CLI.
+
+/***************************************************************************************************
+ * SCULLY IMPORTS
+ */
+import 'zone.js/dist/task-tracking';
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
