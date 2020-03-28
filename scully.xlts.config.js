@@ -1,7 +1,6 @@
 exports.config = {
-  projectRoot: "./src",
-  projectName: "xlts",
+  projectRoot: './src',
+  projectName: 'xlts',
   outDir: './dist/static',
-  routes: {
-  }
+  routes: {},
 };
