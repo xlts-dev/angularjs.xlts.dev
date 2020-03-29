@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
-    "start": "ng serve",
+    "start": "ng serve --port=4201",
     "build": "ng build",
     "build:prod": "ng build --prod && npm run scully",
     "test": "ng test",
