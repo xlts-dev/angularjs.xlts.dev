@@ -1,0 +1,20 @@
+@import 'theme';
+
+.mat-toolbar {
+  img {
+    height: 32px;
+    margin-right: 16px;
+  }
+}
+
+main {
+  margin: 32px;
+
+  section {
+    border-radius: 4px;
+    padding: 64px;
+    color: mat-color($foreground, text);
+    background-color: mat-color($xlts-primary, 900);
+    max-width: 800px;
+  }
+}
