@@ -1,6 +1,6 @@
 exports.config = {
   projectRoot: './src',
-  projectName: 'xlts',
+  projectName: 'angularjs.xlts.dev',
   outDir: './dist/static',
   routes: {},
 };

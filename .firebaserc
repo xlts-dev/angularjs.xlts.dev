@@ -2,7 +2,7 @@
   "targets": {
     "xlts-dev": {
       "hosting": {
-        "xlts": [
+        "angularjs.xlts.dev": [
           "angularjs-xlts"
         ]
       }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "xlts": {
+    "angularjs.xlts.dev": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/xlts",
+            "outputPath": "dist/angularjs.xlts.dev",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "xlts:build"
+            "browserTarget": "angularjs.xlts.dev:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "xlts:build:production"
+              "browserTarget": "angularjs.xlts.dev:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "xlts:build"
+            "browserTarget": "angularjs.xlts.dev:build"
           }
         },
         "test": {
@@ -98,11 +98,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "xlts:serve"
+            "devServerTarget": "angularjs.xlts.dev:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "xlts:serve:production"
+              "devServerTarget": "angularjs.xlts.dev:serve:production"
             }
           }
         },
@@ -113,7 +113,7 @@
       }
     }
   },
-  "defaultProject": "xlts",
+  "defaultProject": "angularjs.xlts.dev",
   "cli": {
     "analytics": "70dd6e29-cdde-4246-8158-9dcf22951d2f"
   }

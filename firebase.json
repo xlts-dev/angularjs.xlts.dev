@@ -1,8 +1,12 @@
 {
+  "projects": {
+    "default": "xlts-dev",
+    "production": "xlts-dev"
+  },
   "hosting": [
     {
-      "target": "xlts",
-      "public": "dist/xlts",
+      "target": "angularjs.xlts.dev",
+      "public": "dist/static",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {

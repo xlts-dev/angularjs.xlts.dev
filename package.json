@@ -6,10 +6,12 @@
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod && npm run scully",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "scully": "scully",
+    "scully": "scully --nw",
+    "scully:watch": "scully",
     "scully:serve": "scully serve",
     "deploy": "firebase deploy"
   },
