@@ -9,4 +9,11 @@
   h2 {
     color: $brand-primary;
   }
+  .lts-clarification-link {
+    text-decoration: none;
+  }
+  #lts-clarification {
+    font-size: 10px;
+    font-style: italic;
+  }
 }

@@ -44,6 +44,11 @@ main {
       }
       .quick-summary {
         margin-bottom: 0;
+        font-size: 16px;
+
+        @include breakpoint($large-tablet) {
+          font-size: 24px;
+        }
       }
       .hero-button {
         margin-top: 24px;
@@ -73,7 +78,11 @@ main {
       width: 100%;
 
       > * {
-        flex: 1 1 50%;
+        flex: 1 1 100%;
+
+        @include breakpoint($large-tablet) {
+          flex: 1 1 50%;
+        }
       }
     }
   }
