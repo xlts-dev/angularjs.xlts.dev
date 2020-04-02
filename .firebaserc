@@ -1,4 +1,8 @@
 {
+  "projects": {
+    "default": "xlts-dev",
+    "production": "xlts-dev"
+  },
   "targets": {
     "xlts-dev": {
       "hosting": {

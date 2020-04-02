@@ -23,7 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/assets"],
+            "assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
             "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {
               "includePaths": ["node_modules", "src"]

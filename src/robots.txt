@@ -1,0 +1,3 @@
+Sitemap: https://angularjs.xlts.dev/sitemap.xml
+User-agent: *
+Disallow:
