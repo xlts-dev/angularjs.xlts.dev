@@ -1,0 +1,12 @@
+@import 'theme';
+
+:host {
+  display: block;
+}
+.section-container {
+  margin: 8px;
+
+  h2 {
+    color: $brand-primary;
+  }
+}

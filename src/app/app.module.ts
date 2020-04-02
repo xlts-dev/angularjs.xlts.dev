@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LandingComponent } from './landing/landing.component';
 import { BannerComponent } from './banner/banner.component';
+import { LtsComponent } from './lts/lts.component';
+import { XltsComponent } from './xlts/xlts.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { BannerComponent } from './banner/banner.component';
     LandingComponent,
     BannerComponent,
     ContactFormComponent,
+    LtsComponent,
+    XltsComponent,
   ],
   imports: [
     BrowserModule,
