@@ -1,28 +1,47 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAnalyticsModule, ScreenTrackingService } from '@angular/fire/analytics';
 import { environment } from '../environments/environment';
-import { ScreenTrackingService } from '@angular/fire/analytics';
 import { AngularFirePerformanceModule } from '@angular/fire/performance';
+import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
+import { AppRoutes } from './app-routes';
+import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { LandingComponent } from './landing/landing.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    LandingComponent,
+    BannerComponent,
+    ContactFormComponent,
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(AppRoutes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      relativeLinkResolution: 'corrected',
+    }),
     ScullyLibModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFirePerformanceModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatTooltipModule,
   ],
   providers: [ScreenTrackingService],
   bootstrap: [AppComponent],

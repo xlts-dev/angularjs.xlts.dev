@@ -1,7 +1,11 @@
 @import 'theme';
 
 @include mat-core($custom-typography);
-@include angular-material-theme($xlts-theme);
+@include mat-core-theme($xlts-theme);
+@include mat-toolbar-theme($xlts-theme);
+@include mat-button-theme($xlts-theme);
+@include mat-icon-theme($xlts-theme);
+@include mat-tooltip-theme($xlts-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -13,4 +17,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+.mat-button-base {
+  text-transform: uppercase;
 }

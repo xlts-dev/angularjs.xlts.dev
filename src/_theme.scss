@@ -5,16 +5,38 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$xlts-primary: mat-palette($mat-indigo);
+$xlts-primary: mat-palette($mat-blue, A400);
 $xlts-accent: mat-palette($mat-green);
 
 // The warn palette is optional (defaults to red).
 $xlts-warn: mat-palette($mat-red);
 
+$mat-light-theme-background: (
+  status-bar: map_get($mat-grey, 300),
+  app-bar: map_get($mat-grey, A100),
+  background: map_get($mat-grey, A100),
+  hover: rgba(black, 0.04),
+  card: white,
+  dialog: white,
+  disabled-button: rgba(black, 0.12),
+  raised-button: white,
+  focused-button: $dark-focused,
+  selected-button: map_get($mat-grey, 300),
+  selected-disabled-button: map_get($mat-grey, 400),
+  disabled-button-toggle: map_get($mat-grey, 200),
+  unselected-chip: map_get($mat-grey, 300),
+  disabled-list-option: map_get($mat-grey, 200),
+  tooltip: map_get($mat-grey, 700),
+);
+
 // Create the theme object (a Sass map containing all of the palettes).
-$xlts-theme: mat-dark-theme($xlts-primary, $xlts-accent, $xlts-warn);
+$xlts-theme: mat-light-theme($xlts-primary, $xlts-accent, $xlts-warn);
 
 $foreground: map-get($xlts-theme, foreground);
+$foreground-text: mat-color($foreground, text);
 $background: map-get($xlts-theme, background);
+$brand-primary: mat-color($xlts-primary, A400);
 
-$custom-typography: mat-typography-config();
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto Slab, serif',
+);

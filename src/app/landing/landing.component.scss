@@ -1,0 +1,71 @@
+@import 'theme';
+@import 'variables';
+@import 'mixins';
+
+:host {
+  display: block;
+}
+
+main {
+  padding: 0 16px;
+  margin: 64px auto;
+  max-width: 1200px;
+
+  section {
+    color: $foreground-text;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+
+    .hero-headers {
+      max-width: 800px;
+
+      .hero,
+      .second-hero {
+        color: $brand-primary;
+        margin-bottom: 32px;
+      }
+      .second-hero {
+        margin-bottom: 16px;
+      }
+      hr {
+        margin-inline-start: 95px;
+        background: $brand-primary;
+        border: 1px solid $brand-primary;
+        border-radius: 4px;
+        padding: 1px;
+        width: 311px;
+        margin-bottom: 32px;
+
+        &.angularjs {
+          width: 267px;
+          margin-inline-start: 96px;
+        }
+      }
+      .quick-summary {
+        margin-bottom: 0;
+      }
+      .hero-button {
+        margin-top: 24px;
+      }
+    }
+    .hero-image-container {
+      display: none;
+      flex: auto;
+      align-items: flex-start;
+
+      .hero-image {
+        width: 200px;
+        margin: auto;
+
+        &:not(.angularjs) {
+          opacity: 0.5;
+        }
+      }
+
+      @include breakpoint(1080px) {
+        display: flex;
+      }
+    }
+  }
+}
