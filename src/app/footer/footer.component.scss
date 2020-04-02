@@ -12,50 +12,39 @@ footer {
   display: flex;
   place-content: center;
   align-items: center;
-  padding-top: 48px;
+  padding-top: 32px;
   background-color: mat-color($mat-gray, 50);
   font-size: 16px;
 
-  .section-container {
+  nav.section-container {
     flex-flow: row wrap;
     box-sizing: border-box;
+    justify-content: center;
     display: flex;
+    width: 100%;
+    max-width: 800px;
 
     .section {
-      margin: 0 64px;
+      margin-top: 16px;
+      flex: 0 1 33%;
+      display: flex;
+      flex-direction: column;
 
       h3 {
         color: $brand-primary;
         text-align: center;
       }
       ul {
+        margin: 0 48px;
         padding: 0;
 
-        .mat-icon {
-          vertical-align: bottom;
-          font-size: 16px;
-          height: 16px;
-        }
-      }
-      li {
-        list-style-type: none;
-        padding: 6px 0;
-        text-align: center;
-
-        a {
+        li {
+          list-style-type: none;
           padding: 6px 0;
-        }
-      }
+          text-align: center;
 
-      &.contact {
-        ul {
-          li {
-            text-align: start;
-
-            .mat-icon {
-              vertical-align: middle;
-              padding-bottom: 4px;
-            }
+          a {
+            padding: 6px 0;
           }
         }
       }
