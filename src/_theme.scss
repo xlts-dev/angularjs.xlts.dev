@@ -6,7 +6,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $xlts-primary: mat-palette($mat-blue, A400);
-$xlts-accent: mat-palette($mat-green);
+$xlts-accent: mat-palette($mat-green, 600);
 
 // The warn palette is optional (defaults to red).
 $xlts-warn: mat-palette($mat-red);

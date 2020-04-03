@@ -1,4 +1,6 @@
 @import 'theme';
+@import 'variables';
+@import 'mixins';
 
 :host {
   display: block;
@@ -18,5 +20,13 @@
   }
   .spacer {
     flex: auto;
+  }
+  #banner-register {
+    margin-right: 16px;
+    display: none;
+
+    @include breakpoint($large-handset) {
+      display: block;
+    }
   }
 }
